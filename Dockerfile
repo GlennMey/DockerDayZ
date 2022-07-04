@@ -11,7 +11,6 @@ WORKDIR /server
 
 # Stable:
 # STEAM_APP_ID=223350
-#
 # Experimental:
 # STEAM_APP_ID=1042420
 ENV STEAM_APP_ID=1042420
