@@ -8,7 +8,10 @@ services:
         restart: unless-stopped
         ports:
             - 2302:2302/udp
-            - 27016:27016/udp
+            - 2303:2303/udp
+            - 2304:2304/udp
+            - 2305:2305/udp
+            - 27015:27015/udp
         volumes:
             # Directory used for "profiles"
             - ./profile_data:/data
@@ -22,10 +25,7 @@ services:
         environment:
             CONFIG_FILE: /config.cfg
             PROFILE_DIR: /data
-            CPU_COUNT: 6
 
             # Stable: 223350
             # Experimental: 1042420
             STEAM_APP_ID: 1042420
-        # Memory limit for the container
-        mem_limit: 8g
