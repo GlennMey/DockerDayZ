@@ -11,7 +11,6 @@ services:
             - 2303:2303/udp
             - 2304:2304/udp
             - 2305:2305/udp
-            - 27015:27015/udp
         volumes:
             # Directory used for "profiles"
             - ./profile_data:/data
