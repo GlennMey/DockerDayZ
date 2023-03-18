@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:bullseye
 
 RUN sed -i -e "s/ main[[:space:]]*\$/ main contrib non-free/" /etc/apt/sources.list
 RUN dpkg --add-architecture i386
