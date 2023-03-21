@@ -10,10 +10,8 @@
     - You will also need to **forward** the RCON port in the `docker-compose.yml` file. Default is `2303` (`gamePort + 1 = rconPort`)
 
 ## Setup
-1. Edit `serverDZ.cfg`.
-2. Edit the file `docker-compose.yml` to match your server needs.
-3. Run `docker-compose up -d` to start up the server. It will download the server files into `server_files` (unless changed in `docker-compose.yml`).
-4. Run `docker-compose logs -ft` to watch the console/server logs. Hit CTRL+C to get out of the logs.
+1. Run `docker-compose up -d` to start up the server. It will download the server files into `server_files` (unless changed in `docker-compose.yml`).
+2. Run `docker-compose logs -ft` to watch the console/server logs. Hit CTRL+C to get out of the logs.
 
 Once you're done with the server, run `docker-compose down` to shut the server/container down.  
 If you wanna boot it back up, just run `docker-compose up -d` again.
