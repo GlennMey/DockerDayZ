@@ -3,7 +3,7 @@
 ## Useful resources
 1. [DayZ Server Configuration on Bohemia's wiki](https://community.bistudio.com/wiki/DayZ:Server_Configuration)
 
-## Needed manual actions
+## Manual actions
 - Mount the `whitelist.txt` / `priority.txt` files in the Docker Compose file
 - Remote access via RCON isn't enabled by default. You can configure that [by following the steps on Bohemia's wiki](https://community.bistudio.com/wiki/DayZ:Server_Configuration#BattlEye_Configuration)
     - Unless `-bePath` is used, the path for BattlEye is: `server_files/battleye/beserver_x64.cfg`
